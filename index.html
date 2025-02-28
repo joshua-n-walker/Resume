@@ -3,64 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Walker | Portfolio</title>
+    <title>Joshua Walker - Enterprise Architect</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Joshua Walker</h1>
-        <p>Enterprise Architect | Systems Engineer | Database Administrator</p>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <div class="container">
+            <h1>Joshua Walker</h1>
+            <p>Enterprise Architect | Systems Engineer | Database Administrator</p>
+            <nav>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an experienced Enterprise Architect with a strong background in systems engineering, database administration, and IT infrastructure design.</p>
-    </section>
-    
-    <section id="experience">
+
+    <section id="experience" class="container">
         <h2>Experience</h2>
-        <ul>
-            <li><strong>Enterprise Architect</strong> - Mission Command Support Center (2019 - Present)</li>
-            <li><strong>Systems Engineer</strong> - G3 Technologies (2016 - 2019)</li>
-            <li><strong>Systems Administration Internship</strong> - Department of Defense (2015 - 2016)</li>
-        </ul>
+        <div class="job">
+            <h3>Enterprise Architect</h3>
+            <p><strong>Mission Command Support Center - Belcan, Aberdeen Proving Ground, MD</strong> | July 2019 – Present</p>
+            <ul>
+                <li>Designed and maintained data center architecture (air flow, power, server hardware, networking).</li>
+                <li>Managed VMware, ScienceLogic, ACAS, SCCM, Rancher, Docker, and Kubernetes (RKE2) environments.</li>
+                <li>Served as resident DBA, optimizing MySQL and SQL Server databases.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Systems Engineer</h3>
+            <p><strong>G3 Technologies, Chantilly, VA</strong> | June 2016 – June 2019</p>
+            <ul>
+                <li>Developed expertise in GSM cellular networks and scripting (Shell, Python, PowerShell).</li>
+                <li>Administered Red Hat Enterprise Linux, Windows Server, and MariaDB Galera clusters.</li>
+                <li>Implemented prototype systems into production.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Systems Administration Internship</h3>
+            <p><strong>Department of Defense, Aberdeen Proving Ground</strong> | May 2015 – January 2016</p>
+            <ul>
+                <li>Managed user network accounts and automated processes with batch/PowerShell scripts.</li>
+            </ul>
+        </div>
     </section>
-    
-    <section id="education">
+
+    <section id="education" class="container">
         <h2>Education</h2>
-        <ul>
-            <li>Master's Degree in Business Technology Management - Stevenson University (2018)</li>
-            <li>Bachelor's in Computer Information Systems - Stevenson University (2016)</li>
-        </ul>
+        <p><strong>Master’s Degree - Business Technology Management</strong><br>Stevenson University, Owings Mills | August 2016 – May 2018</p>
+        <p><strong>BS - Computer Information Systems</strong><br>Stevenson University, Owings Mills | August 2012 – May 2016</p>
     </section>
-    
-    <section id="skills">
-        <h2>Skills & Certifications</h2>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
         <ul>
-            <li>Linux & Windows Server Administration</li>
-            <li>Database Architecture (MySQL, SQL Server)</li>
+            <li>Fast Learner & Problem Solver</li>
             <li>Scripting (PowerShell, Shell, Python, SQL)</li>
-            <li>Security+ & VMware Certified Professional (VCP)</li>
+            <li>Server/Desktop Hardware</li>
+            <li>HyperConverged Infrastructure</li>
+            <li>MySQL Database Architecture</li>
+            <li>Linux (RHEL/CentOS/Ubuntu)</li>
+            <li>Windows Server & Active Directory</li>
         </ul>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> joshuanwalker94@gmail.com</p>
+        <p><strong>Phone:</strong> (443) 955-9025</p>
+        <p><strong>Location:</strong> Bel Air, MD 21014</p>
     </section>
-    
+
+    <footer>
+        <p>&copy; 2025 Joshua Walker. All rights reserved.</p>
+    </footer>
 </body>
 </html>
